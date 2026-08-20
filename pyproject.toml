@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "argmine-agent"
+version = "0.1.0"
+description = "Hybrid argument mining pipeline"
+requires-python = ">=3.10"
+dependencies = ["pydantic>=2.0", "networkx>=3.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+llm = ["openai>=1.0"]
+train = ["transformers>=4.40", "datasets>=2.18", "torch>=2.0"]
+viz = ["pygraphviz>=1.12"]
+
+[project.scripts]
+argmine = "src.pipeline:main"
+
+[tool.setuptools]
+packages = ["src", "src.component_classifier", "eval"]

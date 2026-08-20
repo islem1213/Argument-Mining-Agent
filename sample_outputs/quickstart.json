@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {
+      "id": "c1",
+      "text": "Schools should start later.",
+      "start": 0,
+      "end": 27,
+      "label": "major_claim",
+      "stance": "pro"
+    },
+    {
+      "id": "c2",
+      "text": "Teenagers need more sleep, so later starts improve learning.",
+      "start": 28,
+      "end": 88,
+      "label": "claim",
+      "stance": "pro"
+    },
+    {
+      "id": "c3",
+      "text": "Critics worry about transport costs.",
+      "start": 89,
+      "end": 125,
+      "label": "claim",
+      "stance": "con"
+    }
+  ],
+  "edges": []
+}

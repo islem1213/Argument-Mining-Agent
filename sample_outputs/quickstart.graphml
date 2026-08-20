@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d5" for="node" attr.name="stance" attr.type="string" />
+  <key id="d4" for="node" attr.name="label" attr.type="string" />
+  <key id="d3" for="node" attr.name="end" attr.type="long" />
+  <key id="d2" for="node" attr.name="start" attr.type="long" />
+  <key id="d1" for="node" attr.name="text" attr.type="string" />
+  <key id="d0" for="node" attr.name="id" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="c1">
+      <data key="d0">c1</data>
+      <data key="d1">Schools should start later.</data>
+      <data key="d2">0</data>
+      <data key="d3">27</data>
+      <data key="d4">major_claim</data>
+      <data key="d5">pro</data>
+    </node>
+    <node id="c2">
+      <data key="d0">c2</data>
+      <data key="d1">Teenagers need more sleep, so later starts improve learning.</data>
+      <data key="d2">28</data>
+      <data key="d3">88</data>
+      <data key="d4">claim</data>
+      <data key="d5">pro</data>
+    </node>
+    <node id="c3">
+      <data key="d0">c3</data>
+      <data key="d1">Critics worry about transport costs.</data>
+      <data key="d2">89</data>
+      <data key="d3">125</data>
+      <data key="d4">claim</data>
+      <data key="d5">con</data>
+    </node>
+  </graph>
+</graphml>

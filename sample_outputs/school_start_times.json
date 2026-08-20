@@ -1,0 +1,8 @@
+{
+  "nodes": [
+    {"id": "c1", "text": "Schools should start later.", "label": "major_claim", "stance": "for"},
+    {"id": "c2", "text": "Teenagers need more sleep, so later starts improve learning.", "label": "premise", "stance": "for"},
+    {"id": "c3", "text": "Critics worry about transport costs.", "label": "claim", "stance": "for"}
+  ],
+  "edges": [{"source": "c2", "target": "c1", "type": "support", "confidence": 0.55}]
+}
