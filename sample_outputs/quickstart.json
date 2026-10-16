@@ -1,4 +1,5 @@
 {
+  "schema_version": "0.2",
   "nodes": [
     {
       "id": "c1",
@@ -6,24 +7,81 @@
       "start": 0,
       "end": 27,
       "label": "major_claim",
-      "stance": "pro"
+      "stance": "pro",
+      "sentence": 0,
+      "confidence": 0.6
     },
     {
       "id": "c2",
-      "text": "Teenagers need more sleep, so later starts improve learning.",
+      "text": "Teenagers need more sleep",
       "start": 28,
-      "end": 88,
-      "label": "claim",
-      "stance": "pro"
+      "end": 53,
+      "label": "premise",
+      "stance": "neutral",
+      "sentence": 1,
+      "confidence": 0.6
     },
     {
       "id": "c3",
-      "text": "Critics worry about transport costs.",
-      "start": 89,
-      "end": 125,
+      "text": "later starts improve learning.",
+      "start": 58,
+      "end": 88,
       "label": "claim",
-      "stance": "con"
+      "stance": "pro",
+      "marker": "so",
+      "sentence": 1,
+      "confidence": 0.6
     }
   ],
-  "edges": []
+  "edges": [
+    {
+      "source": "c2",
+      "target": "c3",
+      "type": "support",
+      "confidence": 0.65,
+      "rationale": "followed by conclusion marker 'so'"
+    },
+    {
+      "source": "c3",
+      "target": "c1",
+      "type": "support",
+      "confidence": 0.55,
+      "rationale": "claim → major claim (stance/marker)"
+    }
+  ],
+  "analysis": {
+    "components": {
+      "c1": {
+        "grounded": "in",
+        "strength": 0.875,
+        "supporters": 1,
+        "attackers": 0
+      },
+      "c2": {
+        "grounded": "in",
+        "strength": 0.5,
+        "supporters": 0,
+        "attackers": 0
+      },
+      "c3": {
+        "grounded": "in",
+        "strength": 0.75,
+        "supporters": 1,
+        "attackers": 0
+      }
+    },
+    "central_claim": "c1",
+    "unsupported_claims": [],
+    "isolated_components": [],
+    "fallacies": []
+  },
+  "metadata": {
+    "component_backend": "heuristic",
+    "stance_backend": "heuristic",
+    "relation_backend": "heuristic",
+    "relation_window": "2",
+    "tree": "True",
+    "reasoning": "True",
+    "elapsed_ms": "170"
+  }
 }

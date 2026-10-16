@@ -1,0 +1,30 @@
+flowchart BT
+    c1["<b>c1 · major claim</b><br/>Schools should start later in the morning."]:::major_claim
+    c2["<b>c2 · premise</b><br/>Teenagers need more sleep"]:::premise
+    c3["<b>c3 · claim</b><br/>later starts improve learning."]:::claim
+    c4["<b>c4 · premise</b><br/>A 2014 study found that students at later-starting schools had better…"]:::premise
+    c5["<b>c5 · claim</b><br/>critics worry about transport costs."]:::claim
+    c6["<b>c6 · premise</b><br/>Buses would have to run on new schedules"]:::premise
+    c7["<b>c7 · premise</b><br/>many districts already share buses across schools."]:::premise
+    c8["<b>c8 · premise</b><br/>Everyone knows that early starts are terrible for families."]:::premise
+    c9["<b>c9 · claim</b><br/>the benefits of later start times clearly outweigh the costs."]:::claim
+    c2 -->|support| c3
+    c3 -->|support| c1
+    c4 -->|support| c3
+    c5 -.->|attack| c1
+    c6 -->|support| c5
+    c7 -.->|attack| c6
+    c8 -->|support| c9
+    c9 -->|support| c1
+    classDef major_claim fill:#dbeafe,stroke:#1d4ed8,color:#1e3a8a
+    classDef claim fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef premise fill:#ccfbf1,stroke:#0f766e,color:#134e4a
+    classDef non_argumentative fill:#f3f4f6,stroke:#9ca3af,color:#4b5563
+    linkStyle 0 stroke:#16a34a
+    linkStyle 1 stroke:#16a34a
+    linkStyle 2 stroke:#16a34a
+    linkStyle 3 stroke:#dc2626
+    linkStyle 4 stroke:#16a34a
+    linkStyle 5 stroke:#dc2626
+    linkStyle 6 stroke:#16a34a
+    linkStyle 7 stroke:#16a34a

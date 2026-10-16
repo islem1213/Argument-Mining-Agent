@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d17" for="edge" attr.name="rationale" attr.type="string"/>
+<key id="d16" for="edge" attr.name="confidence" attr.type="double"/>
+<key id="d15" for="edge" attr.name="type" attr.type="string"/>
+<key id="d14" for="edge" attr.name="target" attr.type="string"/>
+<key id="d13" for="edge" attr.name="source" attr.type="string"/>
+<key id="d12" for="node" attr.name="marker" attr.type="string"/>
+<key id="d11" for="node" attr.name="attackers" attr.type="long"/>
+<key id="d10" for="node" attr.name="supporters" attr.type="long"/>
+<key id="d9" for="node" attr.name="strength" attr.type="double"/>
+<key id="d8" for="node" attr.name="grounded" attr.type="string"/>
+<key id="d7" for="node" attr.name="confidence" attr.type="double"/>
+<key id="d6" for="node" attr.name="sentence" attr.type="long"/>
+<key id="d5" for="node" attr.name="stance" attr.type="string"/>
+<key id="d4" for="node" attr.name="label" attr.type="string"/>
+<key id="d3" for="node" attr.name="end" attr.type="long"/>
+<key id="d2" for="node" attr.name="start" attr.type="long"/>
+<key id="d1" for="node" attr.name="text" attr.type="string"/>
+<key id="d0" for="node" attr.name="id" attr.type="string"/>
+<graph edgedefault="directed"><node id="c1">
+  <data key="d0">c1</data>
+  <data key="d1">Schools should start later in the morning.</data>
+  <data key="d2">0</data>
+  <data key="d3">42</data>
+  <data key="d4">major_claim</data>
+  <data key="d5">pro</data>
+  <data key="d6">0</data>
+  <data key="d7">0.6</data>
+  <data key="d8">out</data>
+  <data key="d9">0.6719</data>
+  <data key="d10">2</data>
+  <data key="d11">1</data>
+</node>
+<node id="c2">
+  <data key="d0">c2</data>
+  <data key="d1">Teenagers need more sleep</data>
+  <data key="d2">43</data>
+  <data key="d3">68</data>
+  <data key="d4">premise</data>
+  <data key="d5">neutral</data>
+  <data key="d6">1</data>
+  <data key="d7">0.6</data>
+  <data key="d8">in</data>
+  <data key="d9">0.5</data>
+  <data key="d10">0</data>
+  <data key="d11">0</data>
+</node>
+<node id="c3">
+  <data key="d0">c3</data>
+  <data key="d1">later starts improve learning.</data>
+  <data key="d2">73</data>
+  <data key="d3">103</data>
+  <data key="d4">claim</data>
+  <data key="d5">pro</data>
+  <data key="d12">so</data>
+  <data key="d6">1</data>
+  <data key="d7">0.6</data>
+  <data key="d8">in</data>
+  <data key="d9">0.875</data>
+  <data key="d10">2</data>
+  <data key="d11">0</data>
+</node>
+<node id="c4">
+  <data key="d0">c4</data>
+  <data key="d1">A 2014 study found that students at later-starting schools had better grades and fewer absences.</data>
+  <data key="d2">104</data>
+  <data key="d3">200</data>
+  <data key="d4">premise</data>
+  <data key="d5">pro</data>
+  <data key="d6">2</data>
+  <data key="d7">0.65</data>
+  <data key="d8">in</data>
+  <data key="d9">0.5</data>
+  <data key="d10">0</data>
+  <data key="d11">0</data>
+</node>
+<node id="c5">
+  <data key="d0">c5</data>
+  <data key="d1">critics worry about transport costs.</data>
+  <data key="d2">211</data>
+  <data key="d3">247</data>
+  <data key="d4">claim</data>
+  <data key="d5">con</data>
+  <data key="d12">however</data>
+  <data key="d6">3</data>
+  <data key="d7">0.6</data>
+  <data key="d8">in</data>
+  <data key="d9">0.625</data>
+  <data key="d10">1</data>
+  <data key="d11">0</data>
+</node>
+<node id="c6">
+  <data key="d0">c6</data>
+  <data key="d1">Buses would have to run on new schedules</data>
+  <data key="d2">248</data>
+  <data key="d3">288</data>
+  <data key="d4">premise</data>
+  <data key="d5">neutral</data>
+  <data key="d6">4</data>
+  <data key="d7">0.5</data>
+  <data key="d8">out</data>
+  <data key="d9">0.25</data>
+  <data key="d10">0</data>
+  <data key="d11">1</data>
+</node>
+<node id="c7">
+  <data key="d0">c7</data>
+  <data key="d1">many districts already share buses across schools.</data>
+  <data key="d2">294</data>
+  <data key="d3">344</data>
+  <data key="d4">premise</data>
+  <data key="d5">con</data>
+  <data key="d12">but</data>
+  <data key="d6">4</data>
+  <data key="d7">0.55</data>
+  <data key="d8">in</data>
+  <data key="d9">0.5</data>
+  <data key="d10">0</data>
+  <data key="d11">0</data>
+</node>
+<node id="c8">
+  <data key="d0">c8</data>
+  <data key="d1">Everyone knows that early starts are terrible for families.</data>
+  <data key="d2">345</data>
+  <data key="d3">404</data>
+  <data key="d4">premise</data>
+  <data key="d5">neutral</data>
+  <data key="d6">5</data>
+  <data key="d7">0.6</data>
+  <data key="d8">in</data>
+  <data key="d9">0.5</data>
+  <data key="d10">0</data>
+  <data key="d11">0</data>
+</node>
+<node id="c9">
+  <data key="d0">c9</data>
+  <data key="d1">the benefits of later start times clearly outweigh the costs.</data>
+  <data key="d2">416</data>
+  <data key="d3">477</data>
+  <data key="d4">claim</data>
+  <data key="d5">pro</data>
+  <data key="d12">therefore</data>
+  <data key="d6">6</data>
+  <data key="d7">0.6</data>
+  <data key="d8">in</data>
+  <data key="d9">0.75</data>
+  <data key="d10">1</data>
+  <data key="d11">0</data>
+</node>
+<edge source="c2" target="c3">
+  <data key="d13">c2</data>
+  <data key="d14">c3</data>
+  <data key="d15">support</data>
+  <data key="d16">0.65</data>
+  <data key="d17">followed by conclusion marker 'so'</data>
+</edge>
+<edge source="c3" target="c1">
+  <data key="d13">c3</data>
+  <data key="d14">c1</data>
+  <data key="d15">support</data>
+  <data key="d16">0.55</data>
+  <data key="d17">claim → major claim (stance/marker)</data>
+</edge>
+<edge source="c4" target="c3">
+  <data key="d13">c4</data>
+  <data key="d14">c3</data>
+  <data key="d15">support</data>
+  <data key="d16">0.5</data>
+  <data key="d17">nearest claim</data>
+</edge>
+<edge source="c5" target="c1">
+  <data key="d13">c5</data>
+  <data key="d14">c1</data>
+  <data key="d15">attack</data>
+  <data key="d16">0.55</data>
+  <data key="d17">claim → major claim (stance/marker)</data>
+</edge>
+<edge source="c6" target="c5">
+  <data key="d13">c6</data>
+  <data key="d14">c5</data>
+  <data key="d15">support</data>
+  <data key="d16">0.5</data>
+  <data key="d17">nearest claim</data>
+</edge>
+<edge source="c7" target="c6">
+  <data key="d13">c7</data>
+  <data key="d14">c6</data>
+  <data key="d15">attack</data>
+  <data key="d16">0.6</data>
+  <data key="d17">contrast marker 'but'</data>
+</edge>
+<edge source="c8" target="c9">
+  <data key="d13">c8</data>
+  <data key="d14">c9</data>
+  <data key="d15">support</data>
+  <data key="d16">0.65</data>
+  <data key="d17">followed by conclusion marker 'therefore'</data>
+</edge>
+<edge source="c9" target="c1">
+  <data key="d13">c9</data>
+  <data key="d14">c1</data>
+  <data key="d15">support</data>
+  <data key="d16">0.55</data>
+  <data key="d17">claim → major claim (stance/marker)</data>
+</edge>
+</graph></graphml>

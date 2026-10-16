@@ -1,35 +1,77 @@
 <?xml version='1.0' encoding='utf-8'?>
-<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
-  <key id="d5" for="node" attr.name="stance" attr.type="string" />
-  <key id="d4" for="node" attr.name="label" attr.type="string" />
-  <key id="d3" for="node" attr.name="end" attr.type="long" />
-  <key id="d2" for="node" attr.name="start" attr.type="long" />
-  <key id="d1" for="node" attr.name="text" attr.type="string" />
-  <key id="d0" for="node" attr.name="id" attr.type="string" />
-  <graph edgedefault="directed">
-    <node id="c1">
-      <data key="d0">c1</data>
-      <data key="d1">Schools should start later.</data>
-      <data key="d2">0</data>
-      <data key="d3">27</data>
-      <data key="d4">major_claim</data>
-      <data key="d5">pro</data>
-    </node>
-    <node id="c2">
-      <data key="d0">c2</data>
-      <data key="d1">Teenagers need more sleep, so later starts improve learning.</data>
-      <data key="d2">28</data>
-      <data key="d3">88</data>
-      <data key="d4">claim</data>
-      <data key="d5">pro</data>
-    </node>
-    <node id="c3">
-      <data key="d0">c3</data>
-      <data key="d1">Critics worry about transport costs.</data>
-      <data key="d2">89</data>
-      <data key="d3">125</data>
-      <data key="d4">claim</data>
-      <data key="d5">con</data>
-    </node>
-  </graph>
-</graphml>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d17" for="edge" attr.name="rationale" attr.type="string"/>
+<key id="d16" for="edge" attr.name="confidence" attr.type="double"/>
+<key id="d15" for="edge" attr.name="type" attr.type="string"/>
+<key id="d14" for="edge" attr.name="target" attr.type="string"/>
+<key id="d13" for="edge" attr.name="source" attr.type="string"/>
+<key id="d12" for="node" attr.name="marker" attr.type="string"/>
+<key id="d11" for="node" attr.name="attackers" attr.type="long"/>
+<key id="d10" for="node" attr.name="supporters" attr.type="long"/>
+<key id="d9" for="node" attr.name="strength" attr.type="double"/>
+<key id="d8" for="node" attr.name="grounded" attr.type="string"/>
+<key id="d7" for="node" attr.name="confidence" attr.type="double"/>
+<key id="d6" for="node" attr.name="sentence" attr.type="long"/>
+<key id="d5" for="node" attr.name="stance" attr.type="string"/>
+<key id="d4" for="node" attr.name="label" attr.type="string"/>
+<key id="d3" for="node" attr.name="end" attr.type="long"/>
+<key id="d2" for="node" attr.name="start" attr.type="long"/>
+<key id="d1" for="node" attr.name="text" attr.type="string"/>
+<key id="d0" for="node" attr.name="id" attr.type="string"/>
+<graph edgedefault="directed"><node id="c1">
+  <data key="d0">c1</data>
+  <data key="d1">Schools should start later.</data>
+  <data key="d2">0</data>
+  <data key="d3">27</data>
+  <data key="d4">major_claim</data>
+  <data key="d5">pro</data>
+  <data key="d6">0</data>
+  <data key="d7">0.6</data>
+  <data key="d8">in</data>
+  <data key="d9">0.875</data>
+  <data key="d10">1</data>
+  <data key="d11">0</data>
+</node>
+<node id="c2">
+  <data key="d0">c2</data>
+  <data key="d1">Teenagers need more sleep</data>
+  <data key="d2">28</data>
+  <data key="d3">53</data>
+  <data key="d4">premise</data>
+  <data key="d5">neutral</data>
+  <data key="d6">1</data>
+  <data key="d7">0.6</data>
+  <data key="d8">in</data>
+  <data key="d9">0.5</data>
+  <data key="d10">0</data>
+  <data key="d11">0</data>
+</node>
+<node id="c3">
+  <data key="d0">c3</data>
+  <data key="d1">later starts improve learning.</data>
+  <data key="d2">58</data>
+  <data key="d3">88</data>
+  <data key="d4">claim</data>
+  <data key="d5">pro</data>
+  <data key="d12">so</data>
+  <data key="d6">1</data>
+  <data key="d7">0.6</data>
+  <data key="d8">in</data>
+  <data key="d9">0.75</data>
+  <data key="d10">1</data>
+  <data key="d11">0</data>
+</node>
+<edge source="c2" target="c3">
+  <data key="d13">c2</data>
+  <data key="d14">c3</data>
+  <data key="d15">support</data>
+  <data key="d16">0.65</data>
+  <data key="d17">followed by conclusion marker 'so'</data>
+</edge>
+<edge source="c3" target="c1">
+  <data key="d13">c3</data>
+  <data key="d14">c1</data>
+  <data key="d15">support</data>
+  <data key="d16">0.55</data>
+  <data key="d17">claim → major claim (stance/marker)</data>
+</edge>
+</graph></graphml>

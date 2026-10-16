@@ -1,8 +1,242 @@
 {
+  "schema_version": "0.2",
   "nodes": [
-    {"id": "c1", "text": "Schools should start later.", "label": "major_claim", "stance": "for"},
-    {"id": "c2", "text": "Teenagers need more sleep, so later starts improve learning.", "label": "premise", "stance": "for"},
-    {"id": "c3", "text": "Critics worry about transport costs.", "label": "claim", "stance": "for"}
+    {
+      "id": "c1",
+      "text": "Schools should start later in the morning.",
+      "start": 0,
+      "end": 42,
+      "label": "major_claim",
+      "stance": "pro",
+      "sentence": 0,
+      "confidence": 0.6
+    },
+    {
+      "id": "c2",
+      "text": "Teenagers need more sleep",
+      "start": 43,
+      "end": 68,
+      "label": "premise",
+      "stance": "neutral",
+      "sentence": 1,
+      "confidence": 0.6
+    },
+    {
+      "id": "c3",
+      "text": "later starts improve learning.",
+      "start": 73,
+      "end": 103,
+      "label": "claim",
+      "stance": "pro",
+      "marker": "so",
+      "sentence": 1,
+      "confidence": 0.6
+    },
+    {
+      "id": "c4",
+      "text": "A 2014 study found that students at later-starting schools had better grades and fewer absences.",
+      "start": 104,
+      "end": 200,
+      "label": "premise",
+      "stance": "pro",
+      "sentence": 2,
+      "confidence": 0.65
+    },
+    {
+      "id": "c5",
+      "text": "critics worry about transport costs.",
+      "start": 211,
+      "end": 247,
+      "label": "claim",
+      "stance": "con",
+      "marker": "however",
+      "sentence": 3,
+      "confidence": 0.6
+    },
+    {
+      "id": "c6",
+      "text": "Buses would have to run on new schedules",
+      "start": 248,
+      "end": 288,
+      "label": "premise",
+      "stance": "neutral",
+      "sentence": 4,
+      "confidence": 0.5
+    },
+    {
+      "id": "c7",
+      "text": "many districts already share buses across schools.",
+      "start": 294,
+      "end": 344,
+      "label": "premise",
+      "stance": "con",
+      "marker": "but",
+      "sentence": 4,
+      "confidence": 0.55
+    },
+    {
+      "id": "c8",
+      "text": "Everyone knows that early starts are terrible for families.",
+      "start": 345,
+      "end": 404,
+      "label": "premise",
+      "stance": "neutral",
+      "sentence": 5,
+      "confidence": 0.6
+    },
+    {
+      "id": "c9",
+      "text": "the benefits of later start times clearly outweigh the costs.",
+      "start": 416,
+      "end": 477,
+      "label": "claim",
+      "stance": "pro",
+      "marker": "therefore",
+      "sentence": 6,
+      "confidence": 0.6
+    }
   ],
-  "edges": [{"source": "c2", "target": "c1", "type": "support", "confidence": 0.55}]
+  "edges": [
+    {
+      "source": "c2",
+      "target": "c3",
+      "type": "support",
+      "confidence": 0.65,
+      "rationale": "followed by conclusion marker 'so'"
+    },
+    {
+      "source": "c3",
+      "target": "c1",
+      "type": "support",
+      "confidence": 0.55,
+      "rationale": "claim → major claim (stance/marker)"
+    },
+    {
+      "source": "c4",
+      "target": "c3",
+      "type": "support",
+      "confidence": 0.5,
+      "rationale": "nearest claim"
+    },
+    {
+      "source": "c5",
+      "target": "c1",
+      "type": "attack",
+      "confidence": 0.55,
+      "rationale": "claim → major claim (stance/marker)"
+    },
+    {
+      "source": "c6",
+      "target": "c5",
+      "type": "support",
+      "confidence": 0.5,
+      "rationale": "nearest claim"
+    },
+    {
+      "source": "c7",
+      "target": "c6",
+      "type": "attack",
+      "confidence": 0.6,
+      "rationale": "contrast marker 'but'"
+    },
+    {
+      "source": "c8",
+      "target": "c9",
+      "type": "support",
+      "confidence": 0.65,
+      "rationale": "followed by conclusion marker 'therefore'"
+    },
+    {
+      "source": "c9",
+      "target": "c1",
+      "type": "support",
+      "confidence": 0.55,
+      "rationale": "claim → major claim (stance/marker)"
+    }
+  ],
+  "analysis": {
+    "components": {
+      "c1": {
+        "grounded": "out",
+        "strength": 0.6719,
+        "supporters": 2,
+        "attackers": 1
+      },
+      "c2": {
+        "grounded": "in",
+        "strength": 0.5,
+        "supporters": 0,
+        "attackers": 0
+      },
+      "c3": {
+        "grounded": "in",
+        "strength": 0.875,
+        "supporters": 2,
+        "attackers": 0
+      },
+      "c4": {
+        "grounded": "in",
+        "strength": 0.5,
+        "supporters": 0,
+        "attackers": 0
+      },
+      "c5": {
+        "grounded": "in",
+        "strength": 0.625,
+        "supporters": 1,
+        "attackers": 0
+      },
+      "c6": {
+        "grounded": "out",
+        "strength": 0.25,
+        "supporters": 0,
+        "attackers": 1
+      },
+      "c7": {
+        "grounded": "in",
+        "strength": 0.5,
+        "supporters": 0,
+        "attackers": 0
+      },
+      "c8": {
+        "grounded": "in",
+        "strength": 0.5,
+        "supporters": 0,
+        "attackers": 0
+      },
+      "c9": {
+        "grounded": "in",
+        "strength": 0.75,
+        "supporters": 1,
+        "attackers": 0
+      }
+    },
+    "central_claim": "c1",
+    "unsupported_claims": [],
+    "isolated_components": [],
+    "fallacies": [
+      {
+        "component": "c8",
+        "fallacy": "hasty_generalization",
+        "confidence": 0.4,
+        "explanation": "Cue 'Everyone': generalises from limited evidence."
+      },
+      {
+        "component": "c8",
+        "fallacy": "appeal_to_authority",
+        "confidence": 0.4,
+        "explanation": "Cue 'Everyone knows': appeals to popularity or unnamed authority instead of evidence."
+      }
+    ]
+  },
+  "metadata": {
+    "component_backend": "heuristic",
+    "stance_backend": "heuristic",
+    "relation_backend": "heuristic",
+    "relation_window": "2",
+    "tree": "True",
+    "reasoning": "True",
+    "fallacies": "heuristic",
+    "elapsed_ms": "163"
+  }
 }
