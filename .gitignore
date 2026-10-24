@@ -7,3 +7,14 @@ data/raw/*
 !data/raw/README.md
 data/processed/*
 !data/processed/README.md
+# Python
+venv/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log

@@ -1,5 +1,12 @@
 # argmine-agent
 
+[![CI](https://github.com/islem1213/Argument-Mining-Agent/actions/workflows/ci.yml/badge.svg)](https://github.com/islem1213/Argument-Mining-Agent/actions/workflows/ci.yml)
+![Python](https://img.shields.io/badge/python-3.10–3.13-3776AB?logo=python&logoColor=white)
+![Pydantic](https://img.shields.io/badge/schema-Pydantic-E92063?logo=pydantic&logoColor=white)
+![MCP](https://img.shields.io/badge/MCP-server-000000?logo=anthropic&logoColor=white)
+![Argumentation](https://img.shields.io/badge/semantics-Dung%20·%20DF--QuAD-6E56CF)
+![Ruff](https://img.shields.io/badge/code%20style-ruff-D7FF64?logo=ruff&logoColor=black)
+
 > Open-source pipeline that turns prose into an inspectable **argument graph** — claims, premises, support/attack relations — and then reasons over it with formal argumentation semantics.
 
 `argmine-agent` combines cheap, deterministic components (discourse-aware segmentation and heuristics), optional local models (a fine-tuned classifier, an NLI cross-encoder) and optional LLM judges with validated structured output. Every backend produces the same typed graph, so you can start offline and swap in stronger models stage by stage.
